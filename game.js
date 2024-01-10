@@ -8,6 +8,8 @@ var started = false;
 var level = 0;
 function resetGame() {
   $("#level-title").text("Game Over, BIYAAATCH !!!!");
+   var audio = new Audio("sounds/wrong.mp3");
+  audio.play();
   setTimeout(function () {
     $("#level-title").text("Press any key to start over!");
   }, 1000);
